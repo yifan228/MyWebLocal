@@ -1,0 +1,98 @@
+{{ define "main" }}
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        {{ if .Params.Image }}
+        <img src="{{ .Params.Image | absURL }}" alt="" class="img-fluid d-block mx-auto rounded-circle mb-4">
+        {{ end }}
+        <h2 class="widget-title">{{ .Title | markdownify }}</h2>
+        <div class="content">
+          {{ .Content }}
+        </div>
+        <h2 class="widget-title">Experience</h2>
+        <section id="timeline">
+          <article>
+            <div class="inner">
+              <span class="date">
+                <span class="day">16<sup>th</sup></span>
+                <span class="month">sep</span>
+                <span class="year">2022</span>
+              </span>
+              <h2>網銀國際工作</h2>
+              <p>程式設計師<br>2022/01/16 ~ 2022/09/16</p>
+            </div>
+          </article>
+          <article>
+            <div class="inner">
+              <span class="date">
+                <span class="day">01<sup>th</sup></span>
+                <span class="month">sep</span>
+                <span class="year">2021</span>
+              </span>
+              <h2>發布第一款遊戲</h2>
+              <p>PooPoo&Po0BetaVer1.o</p>
+            </div>
+          </article>
+          <article>
+            <div class="inner">
+              <span class="date">
+                <span class="day">01<sup>th</sup></span>
+                <span class="month">sep</span>
+                <span class="year">2021</span>
+              </span>
+              <h2>研究所休學</h2>
+              <p>台大物研所<br>2019~2021</p>
+            </div>
+          </article>
+          <article>
+            <div class="inner">
+              <span class="date">
+                <span class="day">30<sup>th</sup></span>
+                <span class="month">June</span>
+                <span class="year">2019</span>
+              </span>
+              <h2>大學畢業</h2>
+              <p>成大物理系</p>
+            </div>
+          </article>
+          <article>
+            <div class="inner">
+              <span class="date">
+                <span class="day">28<sup>th</sup></span>
+                <span class="month">Feb</span>
+                <span class="year">1997</span>
+              </span>
+              <h2>第一次看見這個世界</h2>
+              <p>誕生</p>
+            </div>
+          </article>
+        </section>
+        <h2 class="widget-title">Portfolio</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ if .Site.Data.gallery.enable }}
+{{ with .Site.Data.gallery }}
+<section>
+  <div class="container-fluid px-0">
+    <div class="text-center">
+      <h4 class="widget-title">My Gallery</h4>
+    </div>
+    <div class="row no-gutters">
+      {{ range .gallery }}
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+        <a href="{{ .image | absURL}}" class="venobox" data-gall="gallery"><img class="img-fluid w-100"
+            src="{{ .image | absURL}}" alt=""></a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ end }}
