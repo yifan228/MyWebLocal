@@ -1,7 +1,7 @@
 ---
 title: "test and markdown note"
 date: 2022-09-29T15:00:00+08:00
-draft: false
+draft: true
 
 # post thumb
 image: "images/myAvatar.png"

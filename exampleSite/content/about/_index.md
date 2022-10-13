@@ -13,4 +13,4 @@ description: "this is meta description"
 type : "about"
 ---
 
-自我介紹
+一隻長相奇特的史萊姆

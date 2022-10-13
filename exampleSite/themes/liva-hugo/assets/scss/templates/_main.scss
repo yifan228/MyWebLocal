@@ -229,8 +229,10 @@
 
 
 /* markdown style */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
 .content {
   * {
+    font-family:'Noto Sans TC','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 20px;
   }
 
@@ -258,7 +260,7 @@
 
       &::before {
         position: absolute;
-        content: "\e71b";
+        content: "➤";
         font-family: $icon-font;
         font-size: 14px;
         left: 0;
