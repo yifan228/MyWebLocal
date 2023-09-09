@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "https://yifan228.github.io"
 languageCode = "zh-tw"
-title = "屎來海姆的遊戲部屋"
+title = "屎來海姆的小屋"
 theme = "liva-hugo"
 summaryLength = "10"
 paginate = 6
